@@ -6,7 +6,7 @@ const CovidMessage = () => {
   return(
       <View style={styles.container}>
           <Text style={styles.title}>Viaje somente se necessário</Text>
-          <Text style={styles.text}>Viaje somente se necessário</Text>
+          <Text style={styles.text}>Ajude a nivelar a curva, se você deve viajar, tenha cuidado, para sua segurança e a segurança da comunidade.</Text>
           <Text style={styles.learnMore}>Leia Sobre</Text>
 
       </View>
