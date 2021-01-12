@@ -31,7 +31,7 @@ const HomeSearch = () => {
               <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
                 <Entypo name={'home'} size={20} color={'#ffffff'}/>
               </View>
-              <Text style={styles.destinationText}>Pontão Lago Sul</Text>
+              <Text style={styles.destinationText}>Casa</Text>
           </View>
       </View>
   )
