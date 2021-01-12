@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Text} from 'react-native';
+import { View } from 'react-native';
 
+import HomeMap from '../../components/HomeMap';
+import CovidMessage from '../../components/CovidMessage';
 
 const HomeScreen = () => {
   return(
       <View>
-          <Text>TEST</Text>
+          <HomeMap />
+          <CovidMessage />
       </View>
   )
 }
