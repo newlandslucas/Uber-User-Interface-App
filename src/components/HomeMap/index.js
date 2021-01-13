@@ -1,16 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 const HomeMap = () => {
   return(
-      <View style={{ 
-            height: 300, 
-            backgroundColor: "#a0abff",
-            justifyContent: 'center',
-            alignItems: 'center',
-            }}>
-          <Text> I am a Map </Text>
-      </View>
+      <MapView
+          style={{
+          height: '100%',
+          width: '100%'
+          }}
+            provider={PROVIDER_GOOGLE}
+            initialRegion={{
+              latitude: -15.841763,
+              longitude: -48.020961,
+              latitudeDelta: 0.0143,
+              longitudeDelta: 0.0134,
+            }}
+          />
   )
 }
 

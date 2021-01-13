@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -20,19 +20,25 @@ const HomeSearch = () => {
               </View>
           </View>
 
+          <TouchableOpacity>
           <View style={styles.row}>
               <View style={styles.iconContainer}>
                 <AntDesign name={'clockcircle'} size={20} color={'#ffffff'}/>
               </View>
               <Text style={styles.destinationText}>Pontão Lago Sul</Text>
           </View>
+          </TouchableOpacity>
+          
 
+          <TouchableOpacity>
           <View style={styles.row}>
               <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
                 <Entypo name={'home'} size={20} color={'#ffffff'}/>
               </View>
               <Text style={styles.destinationText}>Casa</Text>
           </View>
+          </TouchableOpacity>
+          
       </View>
   )
 }
