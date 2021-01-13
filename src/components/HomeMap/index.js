@@ -1,7 +1,7 @@
 import React from 'react';
-import { View } from 'react-native';
+import {Image} from 'react-native';
 
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 const HomeMap = () => {
   return(
@@ -17,7 +17,19 @@ const HomeMap = () => {
               latitudeDelta: 0.0143,
               longitudeDelta: 0.0134,
             }}
-          />
+            showsUserLocation
+          >
+            
+            <Marker 
+              coordinate={{latitude: -15.8418305, longitude: -48.0249147}}
+            >
+              <Image 
+              style={{width: 50, height: 50, resizeMode: 'contain'}}
+              source={require('../../assets/images/top-UberX.png')}
+              />
+
+            </Marker>
+          </MapView>
   )
 }
 

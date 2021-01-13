@@ -8,7 +8,7 @@ const App = () => {
     return(
         <>
             <StatusBar barStyle="dark-content" />
-            <HomeScreen />
+            <SearchResults />
         </>
     )
 };
